@@ -30,7 +30,7 @@ Titles
 -
 emp_no int pk FK -< Employees.emp_no 
 title varchar pk
-from_date date pk FK >- Salaries.from_date
+from_date date pk
 to_date date 
 
 Salaries 
