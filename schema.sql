@@ -36,15 +36,6 @@ CREATE TABLE dept_emp (
     PRIMARY KEY (emp_no, dept_no)
 );
 
-CREATE TABLE titles (
-  emp_no INT NOT NULL,
-  title VARCHAR NOT NULL,
-  from_date DATE NOT NULL,
-  to_date DATE NOT NULL,
-  FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
-  PRIMARY KEY (emp_no, title, from_date)
-);
-
 CREATE TABLE salaries (
   emp_no INT NOT NULL,
   salary INT NOT NULL,
@@ -52,6 +43,15 @@ CREATE TABLE salaries (
   to_date DATE NOT NULL,
   FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
   PRIMARY KEY (emp_no, from_date)
+);
+
+CREATE TABLE titles (
+  emp_no INT NOT NULL,
+  title VARCHAR NOT NULL,
+  from_date DATE NOT NULL,
+  to_date DATE NOT NULL,
+  FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
+  PRIMARY KEY (emp_no, title, from_date)
 );
 
 -- Titles Table does not have a primary Key due to lack of unique identifier.  
@@ -72,7 +72,10 @@ CREATE TABLE salaries (
 --   FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
 --   PRIMARY KEY (title)
 -- );
--- DROP TABLE titles CASCADE;
+-- DROP SCHEMA public CASCADE;
+-- CREATE SCHEMA public;
+-- GRANT ALL ON SCHEMA public TO postgres;
+-- GRANT ALL ON SCHEMA public TO public;
 
 SELECT * FROM departments;
 SELECT * FROM dept_emp;
