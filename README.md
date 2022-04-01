@@ -44,11 +44,13 @@ An employee analysis to identify retirement eligable employees and their associa
 ### Challenge 
 The Challenge portion of the analysis will group the reitrement eligable employees by their titles to assess the mangitude of vacant positions to fill based on job type. In prepartion for the silver tusnami, the company wishes to implement a mentorship program to support existing employees who were born during 1965. Mentorship eligable employees will also be identified as well.  
 
-An Additional Analysis will be performed to assess the retirement status across departments with further refinement for retirement eligibility based on hire dates between 1985 to 1988. The results are captured in the Analysis_Images folder but their respective CSV files were omitted. 
+An Additional Analysis will be performed to assess the retirement status across departments with further refinement for retirement eligibility based on hire dates between 1985 to 1988. The results are captured in the Analysis_Images folder but their respective CSV files were omitted due to high data volume. 
 
 ## Results 
+Three CSV files from the challenge are analyzed below to assess the magnitude of possible vacant positions due to the departure of retirement-aged employees. One additional CSV file provides the query listing the current employees that qualify for the mentorship program. This query has been extended to display the results by departments and job titles. 
 
-Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
+### Retirement-Aged Employees by Titles
+- retirement_titles.csv
 
 ## Summary 
 
