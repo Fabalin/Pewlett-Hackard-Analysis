@@ -1,5 +1,5 @@
 # Pewlett-Hackard-Analysis
-Using PostGreSQL to perform employee status analysis. 
+Using PostGreSQL to perform retirement status analysis. 
 
 ## Overview 
 Pewlett Hackard is a large company that has been around since 1985, based on the earliest hire date within the employees database. The age demographic of the company is mostly baby boomers who are currently coming up on their retirement. The criteria for retirement eligbility is to be a current employee whose birth years are between 1952 to 1955. To prepare for this *"silver tsunami"*, the company is looking to identify the amount of retirement eligable employees and prepare for the amount of vacant positions that will need to be filled. The employee specific data is stored in 6 distinct but related CSV files in PostGreSQL database with the specified data types below:
@@ -44,6 +44,7 @@ An employee analysis to identify retirement eligable employees and their associa
 ### Challenge 
 The Challenge portion of the analysis will group the reitrement eligable employees by their titles to assess the mangitude of vacant positions to fill based on job type. In prepartion for the silver tusnami, the company wishes to implement a mentorship program to support existing employees who were born during 1965. Mentorship eligable employees will also be identified as well.  
 
+An Additional Analysis will be performed to assess the retirement status across departments with further refinement for retirement eligibility based on hire dates between 1985 to 1988. The results are captured in the Analysis_Images folder but their respective CSV files were omitted. 
 
 ## Results 
 
